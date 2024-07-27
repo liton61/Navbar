@@ -1,0 +1,61 @@
+@media only screen and (max-width: 768px) {
+  .navItems {
+    background: red;
+    position: absolute;
+    left: -400px;
+    display: block;
+    width: 214px;
+    top: 56px;
+    height: 100%;
+    padding: 20px;
+    transition: all 0.5s cubic-bezier(0.43, 0.38, 0.68, 0.63);
+  }
+  .activeMenu {
+    left: 0px;
+    transition: all 0.5s cubic-bezier(0.43, 0.38, 0.68, 0.63);
+  }
+  .navItems li {
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  .activeBar,
+  .bar1 {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    left: 14px;
+    transition: all 0.5s cubic-bezier(0.43, 0.38, 0.68, 0.63);
+  }
+  .bar2 {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 26px;
+    left: 14px;
+    transition: all 0.5s cubic-bezier(0.43, 0.38, 0.68, 0.63);
+  }
+  .activeBar span,
+  .bar1 span {
+    width: 25px;
+    height: 2px;
+    background: white;
+    display: block;
+    margin-bottom: 5px;
+    background: red;
+    transition: all 0.5s cubic-bezier(0.43, 0.38, 0.68, 0.63);
+  }
+  .activeBar span:nth-child(3) {
+    rotate: -45deg;
+    top: 0px;
+    position: absolute;
+    transition: all 0.5s cubic-bezier(0.43, 0.38, 0.68, 0.63);
+  }
+  .activeBar span:nth-child(1) {
+    rotate: 45deg;
+    transition: all 0.5s cubic-bezier(0.43, 0.38, 0.68, 0.63);
+  }
+  .activeBar span:nth-child(2) {
+    display: none;
+  }
+}
